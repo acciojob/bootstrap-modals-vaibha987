@@ -1,24 +1,25 @@
-//your code here
-//your JS code here. If required.
-const openButton = document.getElementById('open-odal');
-const closeButton = document.querySelector('.close-modal');
-const modal = document.getElementById('newton-modal');
-});
-openButton.addEventListener('click', function() {
-  // code to open the modal goes here
-});
+// Get the modal
+var modal = document.getElementById("newton-modal");
 
-closeButton.addEventListener('click', function() {
-  // code to close the modal goes here
-});
-openButton.addEventListener('click', function() {
-  modal.classList.add('open');
-});
-closeButton.addEventListener('click', function() {
-  modal.classList.remove('open');
-});
-document.addEventListener('click', function(event) {
-  if (!modal.contains(event.target)) {
-    modal.classList.remove('open');
+// Get the button that opens the modal
+var btn = document.getElementById("open-modal");
+
+// Get the <span> element that closes the modal
+var close = document.getElementsByClassName("close-modal")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-});
+}
