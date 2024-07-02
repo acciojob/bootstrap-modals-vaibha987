@@ -1,8 +1,6 @@
 
 /* Your CSS Code here. */
-* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   /* Situated in the center */
