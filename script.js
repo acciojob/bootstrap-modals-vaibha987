@@ -4,22 +4,22 @@ var modal = document.getElementById("newton-modal");
 // Get the button that opens the modal
 var btn = document.getElementById("open-modal");
 
-// Get the <span> element that closes the modal
+// Get the button that closes the modal
 var close = document.getElementsByClassName("close-modal")[0];
 
+// When the user clicks the button, open the modal 
 btn.onclick = function() {
-  console.log('Opening modal');
   modal.style.display = "block";
 }
 
+// When the user clicks on <span> (x), close the modal
 close.onclick = function() {
-  console.log('Closing modal');
   modal.style.display = "none";
 }
 
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    console.log('Clicked outside modal');
     modal.style.display = "none";
   }
 }

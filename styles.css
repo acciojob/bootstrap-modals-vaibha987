@@ -1,6 +1,7 @@
 
 /* Your CSS Code here. */
 .modal {
+display:none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   /* Situated in the center */
@@ -14,7 +15,5 @@
 
 .modal-content {
   /* Add your styles here */
-  width: 80%;
-  height: 80%;
   padding: 20px;
 }
